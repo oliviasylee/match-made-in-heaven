@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <!--Application title-->
+   <title>The Match Made in Heaven</title>
+</head>
+
+<body>
+  <!--Jumbotron with animation-->
+   <div class="jumbotron jumbotron-fluid">
+       <h1>The Match Made in Heaven</h1>
+   </div>
+
+   <!--Bootstrap container and rows-->
+   <div class="container">
+        <div class="row" >
+
+          <!--Food radio buttons-->
+            <div>
+                <h3>Food</h3>
+                <input name="selector" id="ad_Checkbox1" class="ads_Checkbox" type="radio" value="chinese" />
+                <label class="form-check-label">American</label>
+                  <br>
+                <input name="selector" id="ad_Checkbox2" class="ads_Checkbox" type="radio" value="indian" />
+                <label class="form-check-label">Korean</label>
+                  <br>
+                <input name="selector" id="ad_Checkbox3" class="ads_Checkbox" type="radio" value="mexican" />
+                <label class="form-check-label">Mexican</label>
+                  <br>
+                <input name="selector" id="ad_Checkbox4" class="ads_Checkbox" type="radio" value="italian" />
+                <label class="form-check-label">Italian</label>
+                  <br>
+                <input name="selector" id="ad_Checkbox5" class="ads_Checkbox" type="radio" value="american" />
+                <label class="form-check-label">Greek</label>
+                  <br>
+                  <input name="selector" id="ad_Checkbox5" class="ads_Checkbox" type="radio" value="american" />
+                  <label class="form-check-label">Indian</label>
+                  <br>
+                  <input name="selector" id="ad_Checkbox5" class="ads_Checkbox" type="radio" value="american" />
+                  <label class="form-check-label">Turkish</label>
+                  <br>
+                  <input name="selector" id="ad_Checkbox5" class="ads_Checkbox" type="radio" value="american" />
+                  <label class="form-check-label">French</label>
+                  <br>
+                  <input name="selector" id="ad_Checkbox5" class="ads_Checkbox" type="radio" value="american" />
+                  <label class="form-check-label">Japanese</label>
+                  <br>
+                  <input name="selector" id="ad_Checkbox5" class="ads_Checkbox" type="radio" value="american" />
+                  <label class="form-check-label">Chinese</label>
+                  <br>
+                  <br>
+
+                  <!--"Get Recipe" buttons-->
+                <input type="button" id="save_value" name="save_value" value="Get Recipe" />
+            </div>
+
+           
+
+            <!--Drink radio buttons-->
+            <div>
+                <h3>Feeling Lucky</h3>
+                <input name="selector" id="ad_Checkbox1" class="ads_Checkbox" type="radio" value="vodka" />
+                <label class="form-check-label">My Drink</label>
+                  <br>
+                  <br>
+
+                  <!--"Get Cocktail" buttons-->
+              <input type="button" id="save_drink" name="save_drink" value="Get Drink" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5" id="card">
+              <!--Recipe card displaying food name, ingredients, image, and link to recipe-->
+                <div class="card remove">
+                        <img src="..." class="card-img-top" alt="Prepared Food">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"></p>
+                        </div>
+                </div>
+            </div>
+
+
+            <!--Drink recipe card displaying the cocktail name, image, units of measure, and ingredients-->
+            <div class="col-lg-5" id="drinkcard">
+                <div class="drinkCard remove">
+                        <img src="..." class="drinkCard-img-top" alt="Cocktail">
+                        <div class="drinkCard-body">
+                          <br>
+                        <h5 class="drinkCard-title">Card title</h5>
+                        <p class="drinkCard-text"></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Linking jquery and script file-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
