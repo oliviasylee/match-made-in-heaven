@@ -1,5 +1,5 @@
 ## Project title
-match made in heaven
+The match made in heaven
 
 ## Project description
 We are creating and giving suggestions for the perfect food and beverage combo to make for any occasion.  Depending on the genre of food you desire, we will give you the recipe to prepare the meal and also pair it with the best beverage to optimize your taste buds. Enjoy!
@@ -22,10 +22,10 @@ SO THAT I can make a delicious meal and accompany it with a perfect drink. <br /
 - APIs
 
 ## Tasks and roles: 
-Front-end:
-Back-end:
-README:
-Presentation:
+Front-end:<br /> 
+Back-end:<br /> 
+README:<br /> 
+Presentation:<br /> 
 
 ## APIs to be used
 - The Cocktail DB 
