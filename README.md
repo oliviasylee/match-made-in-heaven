@@ -13,10 +13,10 @@ SO THAT I can make a delicious meal and accompany it with a perfect drink.
 
 
 # Technology
-HTML
-CSS
-jQuery
-APIs
+- HTML
+- CSS
+- jQuery
+- APIs
 
 # Tasks and roles: 
 Front-end:
@@ -25,9 +25,9 @@ README:
 Presentation:
 
 # APIs to be used
-The Cocktail DB 
-The Meal DB
+- The Cocktail DB 
+- The Meal DB
 
 # Credits
-Olivia Seonyeong Lee
-Reginald Prince
+- Olivia Seonyeong Lee
+- Reginald Prince
