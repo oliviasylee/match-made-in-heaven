@@ -28,4 +28,6 @@ Presentation:
 The Cocktail DB 
 The Meal DB
 
-# Rough breakdown of tasks
+# Credits
+Olivia Seonyeong Lee
+Reginald Prince
