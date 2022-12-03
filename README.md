@@ -1,7 +1,7 @@
 ## Project title
 The match made in heaven
 
-## Project description
+## Description
 We are creating and giving suggestions for the perfect food and beverage combo to make for any occasion.  Depending on the genre of food you desire, we will give you the recipe to prepare the meal and also pair it with the best beverage to optimize your taste buds. Enjoy!
 
 ## User story
