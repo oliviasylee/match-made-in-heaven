@@ -33,6 +33,7 @@ nav {
 
 /*Food and Drink card Font*/
 .selections {
+    text-align: center;
     margin: 0;
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
@@ -65,7 +66,17 @@ nav {
     margin-left: 7em;
 }
 
-#save-drink {
+#get-recipe {
+    margin-top: 1em;
+    margin-left: 7em;
+}
+
+#get-recipe-link {
+    margin-top: 1em;
+    margin-left: 7em;
+}
+
+#get-drink {
     margin-top: 1em;
     margin-left: 7em;
 }
@@ -78,13 +89,30 @@ nav {
     margin-bottom: 2em;
     border-radius: 2em;
     background-color: #fafafa;
+    font-size: 1.2em;
+}
+
+.card-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid black;
 }
 
 .card-img-top {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     margin-top: 20px;
     position: relative;
+}
+
+p ul li {
+    list-style-type: square !important;   
+}
+
+.card-text {
+    padding-left: 20px;
 }
 
 .drinkCard {
@@ -109,6 +137,8 @@ nav {
 .page-footer{
     color: #D2CCCA;
     padding-bottom: 1em;
+    min-height: 22vh;
+    box-shadow: 0px 10px 15px -10px rgba(19,19,19,1) inset;
 }
 
 .footer-title{
@@ -157,3 +187,9 @@ ul#credits{
     margin-top: 0;
     text-align: center;    
 }
+
+@media screen and (max-width: 706px){
+    nav .brand-logo {
+      display: contents;
+    }
+  }
