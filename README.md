@@ -17,7 +17,7 @@ Click the screenshot and it will take you to my portfolio web page.
 - HTML
 - CSS Framework: Materialize CSS
 - jQuery
-- APIs
+- APIs<br /> 
        - The Edamam API<br /> 
        - The Cocktail DB<br /> 
 
