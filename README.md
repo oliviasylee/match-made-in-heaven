@@ -18,8 +18,8 @@ Click the screenshot and it will take you to my portfolio web page.
 - CSS Framework: Materialize CSS
 - jQuery
 - APIs
-       - The Edamam API
-       - The Cocktail DB
+       - The Edamam API<br /> 
+       - The Cocktail DB<br /> 
 
 ### Tasks and roles: 
 - Front-end:<br /> 
