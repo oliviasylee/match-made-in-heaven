@@ -10,10 +10,10 @@ SO THAT I can make a delicious meal and accompany it with a perfect drink. <br /
 Click the screenshot and it will take you to my portfolio web page. 
 [![match-made-in-heaven-screenshot](assets/images/hero.jpg)]()
 
-# Process
+## Process
 ## Directions for the Future
 
-## Technology
+### Technology
 - HTML
 - CSS Framework: Materialize
 - jQuery
@@ -21,12 +21,12 @@ Click the screenshot and it will take you to my portfolio web page.
        - The Edamam API
        - The Cocktail DB
 
-## Tasks and roles: 
+### Tasks and roles: 
 - Front-end:<br /> 
 - Back-end:<br /> 
 - README:<br /> 
 - Presentation:<br /> 
 
 # Credits
-- [Olivia Seonyeong Lee]](https://github.com/oliviasylee)
+- [Olivia Seonyeong Lee](https://github.com/oliviasylee)
 - [Reginald Prince](https://github.com/Reggiejr44)
