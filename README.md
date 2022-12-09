@@ -27,5 +27,5 @@ README:<br />
 Presentation:<br /> 
 
 ## Credits
-- [![Olivia Seonyeong Lee](https://github.com/oliviasylee)]
-- [[Reginald Prince](https://github.com/Reggiejr44)]
+- [Olivia Seonyeong Lee](https://github.com/oliviasylee)
+- [Reginald Prince](https://github.com/Reggiejr44)
