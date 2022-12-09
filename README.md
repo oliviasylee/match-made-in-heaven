@@ -11,7 +11,7 @@ Click the screenshot and it will take you to my portfolio web page.
 [![match-made-in-heaven-screenshot](assets/images/hero.jpg)]()
 
 ## Process
-## Directions for the Future
+### Directions for the Future
 
 ### Technology
 - HTML
@@ -27,6 +27,6 @@ Click the screenshot and it will take you to my portfolio web page.
 - README:<br /> 
 - Presentation:<br /> 
 
-# Credits
+## Credits
 - [Olivia Seonyeong Lee](https://github.com/oliviasylee)
 - [Reginald Prince](https://github.com/Reggiejr44)
