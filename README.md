@@ -15,7 +15,7 @@ Click the screenshot and it will take you to my portfolio web page.
 
 ### Technology
 - HTML
-- CSS Framework: Materialize
+- CSS Framework: Materialize CSS
 - jQuery
 - APIs
        - The Edamam API
