@@ -21,11 +21,11 @@ Click the screenshot and it will take you to my portfolio web page.
        - The Cocktail DB
 
 ## Tasks and roles: 
-Front-end:<br /> 
-Back-end:<br /> 
-README:<br /> 
-Presentation:<br /> 
+- Front-end:<br /> 
+- - Back-end:<br /> 
+- README:<br /> 
+- Presentation:<br /> 
 
 ## Credits
-- [Olivia Seonyeong Lee](https://github.com/oliviasylee)
-- [Reginald Prince](https://github.com/Reggiejr44)
+- [![Olivia Seonyeong Lee]](https://github.com/oliviasylee)
+- [![Reginald Prince]](https://github.com/Reggiejr44)
