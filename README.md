@@ -3,7 +3,7 @@
 We are creating and giving suggestions for the perfect food and beverage combo to make for any occasion. Depending on the genre of food you desire, we will give you the recipe to prepare the meal and also pair it with the best beverage to optimize your taste buds. Enjoy!
 
 ## User story
-As A user, I WANT to find recipes for the food I want to make, and I want to get recommendations for drinks that match the food. <br />
+AS A USER I WANT to find recipes for the food I want to make, and I want to get recommendations for drinks that match the food. <br />
 SO THAT I can make a delicious meal and accompany it with a perfect drink. <br />
 
 ## Usage
