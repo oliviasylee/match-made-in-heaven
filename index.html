@@ -11,7 +11,7 @@
    <!--Google fonts, Materialize Icons, and styling links-->
    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
 
    <!--Application title-->
    <title>The Match Made in Heaven</title>
@@ -99,7 +99,11 @@
             <!--Drink radio buttons and Get Drink buttons-->
             <div class="col s12 m10 l5" id="finddrink">
                 <h3 class="selections">Feeling Lucky</h3>
+
+                <button class="btn waves-effect yellow darken-3" id="get-drink">Get Drink
+
                 <button class="btn waves-effect yellow darken-3" type="submit" name="action" id="get-drink">Get Drink
+
                   <i class="material-icons right">send</i>
                   </button>  
             </div>
@@ -129,11 +133,19 @@
     <!--Drink recipe card displaying the drink name, image, units of measure, and ingredients-->
     <div class="col s5" id="drinkCard">
         <div class="drinkCard remove">
+
+                <img src="..." class="drinkCard-img-top"  id="drinkCard-img-top" alt="Random drink">
+                <div class="drinkCard-body">
+                  <br>
+                <h5 class="drinkCard-title" id="drinkCard-title">Card Title</h5>
+                <p class="drinkCard-text" id="drinkCard-text"></p>
+
                 <div class="drinkCard-body">
                   <br>
                 <h5 class="drinkCard-title">Card Title</h5>
                 <img src="..." class="drinkCard-img-top" alt="Random drink">
                 <p class="drinkCard-text"></p>
+
                 <button class="btn waves-effect yellow darken-3" type="submit" name="action" id="save-drink">Save Drink 
                   <i class="material-icons right">save</i></button>
                 </div>
