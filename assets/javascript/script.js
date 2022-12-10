@@ -1,12 +1,13 @@
 //javascript code goes here
-var getDrink = $('#save-drink');
+function getDrink() { 
+var getDrink = $('#get-drink'); // remove if not used
 var queryURLdrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
 
 //displays the drink recipe card 
 $(".drinkCard").attr("class", "drinkCard");
 
   //Drink URL with random drinks  
-  var randomDrink = fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+  var randomDrink = fetch(queryURLdrink)
   .then(function (response) {
       return response.json();
   })
@@ -42,8 +43,48 @@ $(".drinkCard").attr("class", "drinkCard");
         var drinkimg = $(".drinkCard-img-top")
         drinkimg.attr("src", data.drinks[0].strDrinkThumb)
 
+
   });
+};
 
 
+$('#get-drink').click(function(){
+  // check if drink card already exists
+  if ($(".drinkcard")) {
+      // if it does, remove it so we can replace it
+      $( ".drinkcard" ).remove();
+      }
+// run getDrink() function
+getDrink();
+});
+
+var initialDrinks = JSON.parse(localStorage.getItem("favoriteDrinks"))
+
+if (!initialDrinks) {
+  localStorage.setItem("favoriteDrinks", JSON.stringify([]))
+}
+
+$('#save-drink').click(function () {
+  var drinksFromLS = JSON.parse(localStorage.getItem("favoriteDrinks"))
+
+  // here yopu'll gather all of the info from the drink card
+  var drinkTitle = $("#drinkCard-title")[0].innerText
+  var drinkImage = $("#drinkCard-img-top").attr("src")
+  var p = $("#drinkCard-text")[0].innerText
+
+console.log(drinkImage)
+// here, you'll build your object
+  const favouriteDrinkObject = {
+    drinkTitle, // same as --> drinkTitle: drinkTitle
+    drinkImage,
+    p,
+  }
+
+  drinksFromLS.push(favouriteDrinkObject)
+
+  localStorage.setItem("favoriteDrinks",JSON.stringify(drinksFromLS))
+
+
+})
 
 
