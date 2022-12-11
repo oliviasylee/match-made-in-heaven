@@ -7,8 +7,8 @@ AS A USER I WANT to find recipes for the food I want to make, and I want to get 
 SO THAT I can make a delicious meal and accompany it with a perfect drink. <br />
 
 ## Usage
-Click the screenshot and it will take you to the application
-https://user-images.githubusercontent.com/115487208/206886242-72713d1a-acb5-4531-b36b-6a0592e6f5bb.mov
+Click the screenshot and it will take you to the application.
+[![match-made-in-heaven-screenshot](assets/images/Screenshot.jpg)]()
 
 ## Process
 ### Directions for the Future
