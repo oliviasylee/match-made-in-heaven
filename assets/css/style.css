@@ -63,17 +63,23 @@ nav {
 /*Buttons that needs to be center*/
 #save-recipe {
     margin-top: 1em;
-    margin-left: 7em;
+    margin-left: 4em;
 }
 
 #get-recipe {
     margin-top: 1em;
-    margin-left: 7em;
+    margin-left: 4em;
 }
 
 #get-recipe-link {
     margin-top: 1em;
-    margin-left: 7em;
+    margin-left: 4em;
+}
+
+
+#favLink {
+    margin-top: 1em;
+    margin-left: 6em;
 }
 
 #get-drink {
@@ -81,7 +87,7 @@ nav {
     margin-left: 7em;
 }
 
-/*Card Section - currently in*/
+/*Card Section*/
 .foodCard {
     box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
     padding: 2em 1em;
@@ -90,6 +96,17 @@ nav {
     border-radius: 2em;
     background-color: #fafafa;
     font-size: 1.2em;
+}
+
+#favCard {
+    box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
+    padding: 2em 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    background-color: #fafafa;
+    font-size: 1.2em;
+
 }
 
 .card-title {
@@ -105,6 +122,16 @@ nav {
     margin: auto;
     margin-top: 20px;
     position: relative;
+    margin-left: 7px;
+}
+
+#favImg {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 40px;
+
 }
 
 p ul li {

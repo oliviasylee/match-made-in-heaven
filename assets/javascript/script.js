@@ -27,7 +27,6 @@ function getRecipe() {
 
         //Getting and appending the recipe title on the page//
         $(".card-title").html(data.hits[random].recipe.label);
-        $(".card-text").text("Ingredient");
        
         var list = $("<ul>")
         $(".card-text").append(list)
@@ -53,7 +52,8 @@ function getRecipe() {
         var imageInput = document.querySelector(".card-img-top").src;
         var ingredientsInput = document.querySelector(".card-text");
         var linkInput = document.querySelector("#get-recipe-link").href;
-
+        console.log(ingredientsInput);
+        
         let savedRecipes = {
             lable: labelInput.innerHTML,
             image: imageInput,
@@ -67,6 +67,7 @@ function getRecipe() {
     });
 }
 
+function saveDrink () {
 var getDrink = $('#save-drink');
 var queryURLdrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
 
@@ -86,8 +87,7 @@ $(".drinkCard").attr("class", "drinkCard");
 
       var list = $("<ul>");
       $(".drinkCard-text").append(list);
-
-
+      
     //For loop looping through and appending each drink unit of measure and ingredient//
       for (var i = 1; i < 16; i++) {
         var item = $("<li>")
@@ -110,10 +110,7 @@ $(".drinkCard").attr("class", "drinkCard");
         var drinkimg = $(".drinkCard-img-top")
         drinkimg.attr("src", data.drinks[0].strDrinkThumb)
 
-
   });
-};
-
 
 $('#get-drink').click(function(){
   // check if drink card already exists
@@ -155,5 +152,11 @@ console.log(drinkImage)
     $(function(){
         $('#get-recipe').click(function(){
             getRecipe();
+        });
+      });
+
+      $(function(){
+        $('#save-drink').click(function(){
+            saveDrink();
         });
       });

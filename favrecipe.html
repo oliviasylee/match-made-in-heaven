@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,16 +37,21 @@
   <div class="hero"></div>
 
   <!--Results-->
-  <div class="results">
+  <div class="results container">
     <div class="row">
-      <img id="favImg" src="..."/>
-      <h1 id="faveH1"></h1>
-      <p>
-        <ul id="favList"></ul>
-      </p>
-      <a id="favLink">Get Recipe</a>
+      <div class="col s12 m10 l5" id="favCard">
+        <h5 class="card-title" id="faveH1"></h5>
+        <img id="favImg" src="..."/>
+        <p class="card-text"></p>
+        <a href="#" class="btn waves-effect yellow darken-3" id="favLink" name="action" type="submit" target="_blank">Get Recipe Link
+        <i class="material-icons right">link</i>
+      </a> 
+    </div>
     </div>
   </div>
+
+  <!--Empty div-->
+  <div class="col s2"></div>
 
   <!--Footer-->
   <footer class="page-footer blue-grey darken-3">
@@ -89,8 +93,6 @@
 </body>
 
     <!--Linking jquery and script file-->
-    <script src="https://kit.fontawesome.com/4f46042201.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/javascript/favrecipe.js"></script>
   </body>
