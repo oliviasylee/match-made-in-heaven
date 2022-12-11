@@ -1,6 +1,3 @@
-function getDrink() { 
-var getDrink = $('#get-drink'); // remove if not used
-
 const id = "a1c66eff"
 const key = "5a29b2fc6a3634e9526e19cffc59cf8b"
 
@@ -31,14 +28,14 @@ function getRecipe() {
         var list = $("<ul>")
         $(".card-text").append(list)
 
-        //For loop to loop through the ingredient list and append them to the page//
+        //Looping through the ingredients list and appending them//
         for (var i=0; i< data.hits[random].recipe.ingredientLines.length; i++) {
             var item = $("<li>")
             item.html(data.hits[random].recipe.ingredientLines[i]);
             list.append(item)
         }
 
-        //Getting and appending the recipe image and link to the recipe//
+        //Obtaining and appending the recipe image and link to the recipe//
         $(".card-img-top").attr("src", data.hits[random].recipe.image);
         $("#get-recipe-link").attr("href", data.hits[random].recipe.url);
 
@@ -55,7 +52,7 @@ function getRecipe() {
         console.log(ingredientsInput);
         
         let savedRecipes = {
-            lable: labelInput.innerHTML,
+            label: labelInput.innerHTML,
             image: imageInput,
             ingredients: ingredientsInput.textContent,
             link: linkInput
@@ -63,100 +60,83 @@ function getRecipe() {
         console.log(savedRecipes)
         localStorage.setItem('favRecipe' , JSON.stringify(savedRecipes));
     });
-
-    });
+  });
 }
 
-function saveDrink () {
-var getDrink = $('#save-drink');
-var queryURLdrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+function getDrink() {
+  //var getDrink = $('#get-drink'); // remove if not used
+  //CocktailDB URL with user clicked random drink//
+  var queryURLdrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+  //Displaying the drink recipe card//
+  $(".drinkCard").attr("class", "drinkCard");
+    //Drink URL with random drinks
+    var randomDrink = fetch(queryURLdrink)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+        console.log(data.drinks[0].strDrink)
+        console.log(data.drinks[0].strDrinkThumb)
+        
+        $("html, body").animate({ scrollTop: "1300px" }, 1000);
 
-//displays the drink recipe card 
-$(".drinkCard").attr("class", "drinkCard");
+        var list = $("<ul>");
+        $(".drinkCard-text").append(list);
+    
+        //Looping through and appending each drink unit of measure and ingredient//
+        for (var i = 1; i < 16; i++) {
+          var item = $("<li>")
+          ingredient = data.drinks[0]["strIngredient" + i];
+          unit = data.drinks[0]["strMeasure" + i];
+          if (ingredient){
+              item.html(unit + " " + ingredient);
+              list.append(item)
+          }
+      }
+          //Getting the drink instructions and adding them to the drink card//
+          var p = $("<p>");
+          p.html("<h5>Instructions:</h5> \n" + data.drinks[0].strInstructions);
+          $(".drinkCard-text").append(p);
+          var title = $(".drinkCard-title");
+          title.text(data.drinks[0].strDrink);
+          var drinkimg = $(".drinkCard-img-top")
+          drinkimg.attr("src", data.drinks[0].strDrinkThumb)
 
-  //Drink URL with random drinks  
-  var randomDrink = fetch(queryURLdrink)
-  .then(function (response) {
-      return response.json();
-  })
-  .then(function (data) {
-      console.log(data);
-      
-      console.log(data.drinks[0].strDrink)
-      console.log(data.drinks[0].strDrinkThumb)
+          //Saving user clicked random drink to local storage//
+          var saveDrinkButton = document.querySelector("#save-drink");
 
-      var list = $("<ul>");
-      $(".drinkCard-text").append(list);
-      
-    //For loop looping through and appending each drink unit of measure and ingredient//
-      for (var i = 1; i < 16; i++) {
-        var item = $("<li>")
-        ingredient = data.drinks[0]["strIngredient" + i];
-        unit = data.drinks[0]["strMeasure" + i];
-        if (ingredient){
-            item.html(unit + " " + ingredient);
-            list.append(item)
-        }
-    }
+          saveDrinkButton.addEventListener("click", function(event) {
+          event.preventDefault();
 
-        //Getting the drink instructions and appending them to the drink card//
-        var p = $("<p>");
-        p.html("<h5>Instructions:</h5> \n" + data.drinks[0].strInstructions);
-        $(".drinkCard-text").append(p);
+          var labelDrinkInput = document.querySelector(".drinkCard-title");
+          var imgDrinkInput = document.querySelector(".drinkCard-img-top").src;
+          var ingredientsDrinkInput = document.querySelector(".drinkCard-text");
+          console.log(ingredientsDrinkInput)
 
-        var title = $(".drinkCard-title");
-        title.text(data.drinks[0].strDrink);
+          let savedDrink = {
+          labelDrink: labelDrinkInput.innerHTML,
+          imgDrink: imgDrinkInput,
+          ingredientsDrink: ingredientsDrinkInput.textContent,
+  };
+  console.log(savedDrink)
+  localStorage.setItem('favDrink' , JSON.stringify(savedDrink));
+  });
+    });
+  };
 
-        var drinkimg = $(".drinkCard-img-top")
-        drinkimg.attr("src", data.drinks[0].strDrinkThumb)
-
+  $(function(){
+    $('#get-recipe').click(function(){
+      getRecipe();
+    });
   });
 
-$('#get-drink').click(function(){
-  // check if drink card already exists
-  if ($(".drinkcard")) {
-      // if it does, remove it so we can replace it
+  $('#get-drink').click(function(){
+    //Check if drink card already exists//
+    if ($(".drinkcard")) {
+      //If it does, remove it so we can replace it//
       $( ".drinkcard" ).remove();
-      }
-// run getDrink() function
-getDrink();
-});
-
-var initialDrinks = JSON.parse(localStorage.getItem("favoriteDrinks"))
-
-if (!initialDrinks) {
-  localStorage.setItem("favoriteDrinks", JSON.stringify([]))
-}
-
-$('#save-drink').click(function () {
-  var drinksFromLS = JSON.parse(localStorage.getItem("favoriteDrinks"))
-
-  // here yopu'll gather all of the info from the drink card
-  var drinkTitle = $("#drinkCard-title")[0].innerText
-  var drinkImage = $("#drinkCard-img-top").attr("src")
-  var p = $("#drinkCard-text")[0].innerText
-
-console.log(drinkImage)
-// here, you'll build your object
-  const favouriteDrinkObject = {
-    drinkTitle, // same as --> drinkTitle: drinkTitle
-    drinkImage,
-    p,
-  }
-
-  drinksFromLS.push(favouriteDrinkObject)
-
-  localStorage.setItem("favoriteDrinks",JSON.stringify(drinksFromLS))
-
-})
-    $(function(){
-        $('#get-recipe').click(function(){
-            getRecipe();
-        });
-      });
-
-      $(function(){
-        $('#save-drink').click(function(){
-            saveDrink();
-        });
-      });
+    }
+    //Run getDrink() function//
+    getDrink();
+  });

@@ -1,16 +1,24 @@
+:root {
+    --hero: rgba(0, 0, 0, 0.2);
+    --bodybg: #FAF9F6;
+    --boderbt: 0.1em solid black;
+    --box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
+    --bgcolor: #fafafa;
+    --footer: #D2CCCA;
+}
 * {
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: #FAF9F6;
+    background-color: var(--bodybg);
 }
 
 /*Nav*/
 nav {
     position: fixed;
     z-index: 10000; 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--hero);
     padding-right: 20px;
 }
 
@@ -28,7 +36,11 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--hero);
+}
+
+.remove {
+    display: none;
 }
 
 /*Food and Drink card Font*/
@@ -37,76 +49,43 @@ nav {
     margin: 0;
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 0.1em solid black;
+    border-bottom: var(--boderbt);
 }
 
 /*Food card border*/
 #findrecipe {
-    box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
+    box-shadow: var(--box-shadow);
     padding: 2em 1em;
     margin-top: 3em;
     margin-bottom: 2em;
     border-radius: 2em;
-    background-color: #fafafa;
+    background-color: var(--bgcolor);
 }
 
 /*Drink card border*/
 #finddrink {
-    box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
+    box-shadow: var(--box-shadow);
     padding: 2em 1em;
     margin-top: 3em;
     margin-bottom: 2em;
     border-radius: 2em;
-    background-color: #fafafa;
+    background-color: var(--bgcolor);
 }
 
-/*Buttons that needs to be center*/
+/*Buttons*/
 #save-recipe {
     margin-top: 1em;
-    margin-left: 4em;
 }
 
-#get-recipe {
-    margin-top: 1em;
-    margin-left: 4em;
-}
-
-#get-recipe-link {
-    margin-top: 1em;
-    margin-left: 4em;
-}
-
-
-#favLink {
-    margin-top: 1em;
-    margin-left: 6em;
-}
-
-#get-drink {
-    margin-top: 1em;
-    margin-left: 7em;
-}
-
-/*Card Section*/
+/*Food card Section*/
 .foodCard {
-    box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
+    box-shadow: var(--box-shadow);
     padding: 2em 1em;
     margin-top: 3em;
     margin-bottom: 2em;
     border-radius: 2em;
-    background-color: #fafafa;
+    background-color: var(--bgcolor);
     font-size: 1.2em;
-}
-
-#favCard {
-    box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
-    padding: 2em 1em;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    border-radius: 2em;
-    background-color: #fafafa;
-    font-size: 1.2em;
-
 }
 
 .card-title {
@@ -114,41 +93,37 @@ nav {
     margin: 0;
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 0.1em solid black;
+    border-bottom: var(--boderbt);
 }
 
 .card-img-top {
-    max-width: 100%;
-    margin: auto;
-    margin-top: 20px;
+    width: 100%;
+    margin: auto;   
     position: relative;
-    margin-left: 7px;
-}
-
-#favImg {
-    max-width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-    margin-left: 40px;
-
-}
-
-p ul li {
-    list-style-type: square !important;   
 }
 
 .card-text {
     padding-left: 20px;
 }
 
+/*Drink card section*/
 .drinkCard {
-    box-shadow: 0px 10px 15px -10px rgba(19,19,19,.5);
+    box-shadow: var(--box-shadow);
     padding: 2em 1em;
     margin-top: 3em;
     margin-bottom: 2em;
     border-radius: 2em;
-    background-color: #fafafa;
+    background-color: var(--bgcolor);
+    font-size: 1.2em;   
+}
+
+.drinkCard-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: var(--boderbt);
+    padding-top: -10px;
 }
 
 .drinkCard-img-top {
@@ -156,8 +131,56 @@ p ul li {
     position: relative;
 }
 
-.remove {
-    display: none;
+.drinkCard-text {
+    padding-left: 20px;
+}
+
+/*Fav recipe page*/
+.card-drink-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: var(--boderbt);
+}
+
+.card-drink-text {
+    padding-left: 20px;
+}
+
+#favCard {
+    box-shadow: var(--box-shadow);
+    padding: 2em 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    background-color: var(--bgcolor);
+    font-size: 1.2em;
+}
+
+#favImg {
+    width: 100%;
+    margin: auto;   
+    position: relative;
+}
+
+#favDrinkCard {
+    box-shadow: var(--box-shadow);
+    padding: 2em 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    background-color: var(--bgcolor);
+    font-size: 1.2em;
+}
+
+#favDrinkImg     {
+    max-width: 100%;
+    position: relative;
+}
+
+p ul li {
+    list-style-type: square !important;   
 }
 
 /*Footer*/
@@ -202,7 +225,7 @@ ul#credits{
 }
 
 .page-footer a:link, .page-footer a:visited, .page-footer a:active{
-    color: #D2CCCA;
+    color: var(--footer);
 }
 
 .page-footer a:hover{
@@ -210,11 +233,12 @@ ul#credits{
 }
 
 .footer-copyright {
-    color: #D2CCCA;
+    color: var(--footer);
     margin-top: 0;
     text-align: center;    
 }
 
+/*Responsive design*/
 @media screen and (max-width: 706px){
     nav .brand-logo {
       display: contents;
