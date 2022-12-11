@@ -21,7 +21,7 @@ WHEN I view favorite recipe,<br />
 THEN I’m presented with saved recipe and drinks that match it.<br /> 
 
 ## Usage
-Click the screenshot and it will take you to the application.
+To access the application, click the screenshot.
 [![match-made-in-heaven-screenshot](assets/images/Screenshot.jpg)](https://oliviasylee.github.io/match-made-in-heaven/)
 
 ## Process
