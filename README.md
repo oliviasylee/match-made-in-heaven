@@ -34,15 +34,16 @@ To access the application, click the screenshot.
 - HTML
 - CSS Framework: Materialize CSS
 - jQuery
+- Fetch API
 - APIs<br /> 
        - The Edamam API<br /> 
        - The Cocktail DB<br /> 
 
 ### Tasks and roles: 
-- Front-end:<br /> 
-- Back-end:<br /> 
-- README:<br /> 
-- Presentation:<br /> 
+- Front-end: Whole Team<br /> 
+- Back-end: Whole Team<br /> 
+- README: Whole Team<br /> 
+- Presentation: Whole Team<br /> 
 
 ## Credits
 - [Olivia Seonyeong Lee](https://github.com/oliviasylee)
