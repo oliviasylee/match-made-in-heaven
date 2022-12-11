@@ -74,6 +74,19 @@ nav {
 
 /*Buttons*/
 #save-recipe {
+    margin: auto;
+}
+
+#get-recipe, #get-drink {
+    margin-left: 7em;
+}
+
+#favLink {
+    margin-left: 5em;
+}
+
+#save-recipe, #save-drink, #get-recipe-link {
+    margin-left: 5em;
     margin-top: 1em;
 }
 
