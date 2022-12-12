@@ -28,6 +28,7 @@ To access the application, click the screenshot.
 ### Directions for the Future
 - Favorite Recipe: Recipes and drinks can be deleted from Favorite recipe. <br /> 
 - Search Bar: Create a search bar so that user can find recipes by keyword. <br /> 
+- Health Preferences: Provide personalized meal plans based on individual food preferences and desired body type. <br />
 - Code Efficiency & Maintenance: Avoid duplicate codes and optimize them. <br /> 
 
 ### Technology
