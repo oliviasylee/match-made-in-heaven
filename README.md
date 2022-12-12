@@ -26,9 +26,9 @@ To access the application, click the screenshot.
 
 ## Process
 ### Directions for the Future
-- <br /> 
-- <br /> 
-- <br /> 
+- Favorite Recipe: Recipes and drinks can be deleted from Favorite recipe. <br /> 
+- Search Bar: Create a search bar so that user can find recipes by keyword. <br /> 
+- Code Efficiency & Maintenance: Avoid duplicate codes and optimize them. <br /> 
 
 ### Technology
 - HTML
